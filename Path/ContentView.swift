@@ -28,6 +28,14 @@ struct ContentView: View {
                     .frame(width: 250, height: 250)
                     .offset(y: elementIsShowing ? 0 : UIScreen.main.bounds.height / 2)
                     .scaleEffect(elementIsShowing ? 2 : 0.5)
+                
+//                if elementIsShowing {
+//                    ElementView(color: elementIsShowing ? .white : .black)
+//                        .frame(width: 250, height: 250)
+//                        .transition(.slide)
+//                        .scaleEffect(elementIsShowing ? 2 : 0.5)
+//                }
+                
                 Spacer()
             }
             .padding()
