@@ -11,6 +11,7 @@
 		070452722AB2625D0044881F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070452712AB2625D0044881F /* ContentView.swift */; };
 		070452742AB2625E0044881F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070452732AB2625E0044881F /* Assets.xcassets */; };
 		070452772AB2625E0044881F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070452762AB2625E0044881F /* Preview Assets.xcassets */; };
+		070452802AB278CA0044881F /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0704527F2AB278CA0044881F /* ElementView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		070452712AB2625D0044881F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		070452732AB2625E0044881F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		070452762AB2625E0044881F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0704527F2AB278CA0044881F /* ElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				0704526F2AB2625D0044881F /* PathApp.swift */,
 				070452712AB2625D0044881F /* ContentView.swift */,
+				0704527F2AB278CA0044881F /* ElementView.swift */,
 				070452732AB2625E0044881F /* Assets.xcassets */,
 				070452752AB2625E0044881F /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070452802AB278CA0044881F /* ElementView.swift in Sources */,
 				070452722AB2625D0044881F /* ContentView.swift in Sources */,
 				070452702AB2625D0044881F /* PathApp.swift in Sources */,
 			);
