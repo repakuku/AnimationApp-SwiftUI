@@ -24,16 +24,16 @@ struct ContentView: View {
                 
                 Spacer()
                 
-//                ElementView(color: elementIsShowing ? .white : .black)
-//                    .frame(width: 250, height: 250)
-//                    .offset(y: elementIsShowing ? 0 : UIScreen.main.bounds.height / 2)
-//                    .scaleEffect(elementIsShowing ? 2 : 0.5)
+                ElementView(color: elementIsShowing ? .white : .black)
+                    .frame(width: 250, height: 250)
+                    .offset(y: elementIsShowing ? 0 : UIScreen.main.bounds.height / 2)
+                    .scaleEffect(elementIsShowing ? 2 : 0.5)
                 
-                if elementIsShowing {
-                    ElementView(color: elementIsShowing ? .white : .black)
-                        .frame(width: 250, height: 250)
-                        .transition(.bottomSlide)
-                }
+//                if elementIsShowing {
+//                    ElementView(color: .white)
+//                        .frame(width: 250, height: 250)
+//                        .transition(.bottomSlide)
+//                }
                 
                 Spacer()
             }
