@@ -24,17 +24,16 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                ElementView(color: elementIsShowing ? .white : .black)
-                    .frame(width: 250, height: 250)
-                    .offset(y: elementIsShowing ? 0 : UIScreen.main.bounds.height / 2)
-                    .scaleEffect(elementIsShowing ? 2 : 0.5)
+//                ElementView(color: elementIsShowing ? .white : .black)
+//                    .frame(width: 250, height: 250)
+//                    .offset(y: elementIsShowing ? 0 : UIScreen.main.bounds.height / 2)
+//                    .scaleEffect(elementIsShowing ? 2 : 0.5)
                 
-//                if elementIsShowing {
-//                    ElementView(color: elementIsShowing ? .white : .black)
-//                        .frame(width: 250, height: 250)
-//                        .transition(.slide)
-//                        .scaleEffect(elementIsShowing ? 2 : 0.5)
-//                }
+                if elementIsShowing {
+                    ElementView(color: elementIsShowing ? .white : .black)
+                        .frame(width: 250, height: 250)
+                        .transition(.bottomSlide)
+                }
                 
                 Spacer()
             }
@@ -52,5 +51,15 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+extension AnyTransition {
+    static var bottomSlide: AnyTransition {
+        let insertion = AnyTransition.move(edge: .bottom)
+            .combined(with: .scale)
+        let removal = AnyTransition.move(edge: .bottom)
+            .combined(with: .opacity)
+        return .asymmetric(insertion: insertion, removal: removal)
     }
 }
